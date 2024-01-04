@@ -19,22 +19,7 @@
     </div>
     <div class="main2">
         <div class="businesses">
-            <div class="block">sbgvsdfbvsdgf</div>
-            <div class="block">sbgvsdfbvsdgf</div>
-            <div class="block">sbgvsdfbvsdgf</div>
-            <div class="block">sbgvsdfbvsdgf</div>
-            <div class="block">sbgvsdfbvsdgf</div>
-            <div class="block">
-                <div>sbgvsdfbvsdgf</div>
-                <div>sbgvsdfbvsdgf</div>
-                <div>sbgvsdfbvsdgf</div>
-                <div>sbgvsdfbvsdgf</div>
-                <div>sbgvsdfbvsdgf</div>
-                <div>sbgvsdfbvsdgf</div>
-            </div>
-            <div class="block">sbgvsdfbvsdgf</div>
-            <div class="block">sbgvsdfbvsdgf</div>
-            <div class="block">sbgvsdfbvsdgf</div>
+            <!-- <div class='block'>sbgvsdfbvsdgf</div> -->
         </div>
     </div>
 
@@ -54,9 +39,20 @@
         businessArray.push(Catering)
         var Catering=new business("Photography","Gal Hefets", "I TAKE PICTURES", "0509876543", "galhefets@pictrures.camera","picture")
         businessArray.push(Catering)
+        var Catering=new business("Photography","Gal Hefets", "I TAKE PICTURES", "0509876543", "galhefets@pictrures.camera","picture")
+        businessArray.push(Catering)
+        var Catering=new business("Photography","Gal Hefets", "I TAKE PICTURES", "0509876543", "galhefets@pictrures.camera","picture")
+        businessArray.push(Catering)
+        var Catering=new business("Photography","Gal Hefets", "I TAKE PICTURES", "0509876543", "galhefets@pictrures.camera","picture")
+        businessArray.push(Catering)
         for (var i=0; i<businessArray.length; i++){
             console.log("Name: "+businessArray[i].name)
         }
+
+        var businesses=document.querySelector(".businesses");
+        businesses.innerHTML="<div class='block'>sbgvsdfbvsdgf</div>"
+        businesses.innerHTML+="<div class='block'>sbgvsdfbvsdgf</div>";
+        // console.log(businesses.innerHTML)
     </script>
     
 </body>
