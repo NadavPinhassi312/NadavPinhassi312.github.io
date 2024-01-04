@@ -38,22 +38,32 @@
         var businessArray=[]
         var Catering=new business("קייטרינג","חן אמיר", "אתם מביאים אווירה, אנחנו מביאים אוכל", "0501234567", "henamir@yahoo.org.ch","pictures/IMG_1328.JPG")
         businessArray.push(Catering)
-        var Photography=new business("צילום","גל חפץ", "אני מצלם רק אנשים יפים", "0509876543", "galhefets@pictrures.camera","picture")
+        var Photography=new business("צילום","גל חפץ", "אני מצלם רק אנשים יפים", "0509876543", "galhefets@pictrures.camera","pictures/IMG_1328.JPG")
         businessArray.push(Photography)
-        var Photography=new business("צילום","גל חפץ", "אני מצלם רק אנשים יפים", "0509876543", "galhefets@pictrures.camera","picture")
+        var Photography=new business("צילום","גל חפץ", "אני מצלם רק אנשים יפים", "0509876543", "galhefets@pictrures.camera","pictures/IMG_1328.JPG")
         businessArray.push(Photography)
-        var Photography=new business("צילום","גל חפץ", "אני מצלם רק אנשים יפים", "0509876543", "galhefets@pictrures.camera","picture")
+        var Photography=new business("צילום","גל חפץ", "אני מצלם רק אנשים יפים", "0509876543", "galhefets@pictrures.camera","pictures/IMG_1328.JPG")
         businessArray.push(Photography)
-        var Photography=new business("צילום","גל חפץ", "אני מצלם רק אנשים יפים", "0509876543", "galhefets@pictrures.camera","picture")
+        var Photography=new business("צילום","גל חפץ", "אני מצלם רק אנשים יפים", "0509876543", "galhefets@pictrures.camera","pictures/IMG_1328.JPG")
         businessArray.push(Photography)
-        var Photography=new business("צילום","גל חפץ", "אני מצלם רק אנשים יפים", "0509876543", "galhefets@pictrures.camera","picture")
+        var Photography=new business("צילום","גל חפץ", "אני מצלם רק אנשים יפים", "0509876543", "galhefets@pictrures.camera","pictures/IMG_1328.JPG")
         businessArray.push(Photography)
         
 
         var businesses=document.querySelector(".businesses");
         for (i=0;i<businessArray.length;i++){
-            var curBuis=businessArray[i]
-            businesses.innerHTML+="<div class='block'><div class='subtitle'>שם העסק: "+curBuis.name+"</div><div class='subtitle'> הבעלים: "+curBuis.owner+"</div><div class='subtitle'>תיאור: "+curBuis.description+"</div><div class='subtitle'>"+curBuis.phone+" :מספר טלפון </div><div class='subtitle'>"+curBuis.email+" :אימייל</div>"
+            var curBuis = businessArray[i];
+            var blockHTML =
+            "<div class='block'>" +
+                "<img src='" + curBuis.picture + "' alt='businessIMG' class='image'>" +
+                "<div class='subtitle'>שם העסק: " + curBuis.name + "</div>" +
+                "<div class='subtitle'> הבעלים: " + curBuis.owner + "</div>" +
+                "<div class='subtitle'>תיאור: " + curBuis.description + "</div>" +
+                "<div class='subtitle'>" + curBuis.phone + " :מספר טלפון </div>" +
+                "<div class='subtitle'>" + curBuis.email + " :אימייל</div>" +
+                "</div>";
+
+            businesses.innerHTML += blockHTML;
         }
         
         // businesses.innerHTML+="<div class='block'><div class='subtitle'>"+Catering.name+" :שם העסק </div><div class='subtitle'>"+Catering.owner+" :הבעלים </div><div class='subtitle'>"+Catering.description+" : תיאור </div><div class='subtitle'>"+Catering.phone+" :מספר טלפון </div><div class='subtitle'>"+Catering.email+" :אימייל </div></div>"

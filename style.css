@@ -71,6 +71,11 @@ body{
 .image{
     height:300px;
     width:auto;
+    border-radius: 10px;
+    float:left;
+    margin-right: 10px; /* Optional margin for spacing */
+    margin-bottom: 10px; /* Optional margin for spacing */
+    clear: both;
 }
 @media(max-width:986px) {
     .block{
