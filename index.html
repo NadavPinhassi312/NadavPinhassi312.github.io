@@ -49,9 +49,16 @@
                 this.picture=picture;
             }
         }
+        var businessArray=[]
         var Catering=new business("Catering","Hen Amir", "WE BRING YOU FOOD!", "0501234567", "henamir@yahoo.org.ch","picture")
-        print(Catering)
+        businessArray.push(Catering)
+        var Catering=new business("Photography","Gal Hefets", "I TAKE PICTURES", "0509876543", "galhefets@pictrures.camera","picture")
+        businessArray.push(Catering)
+        for (var i=0; i<businessArray.length; i++){
+            console.log("Name: "+businessArray[i].name)
+        }
     </script>
+    
 </body>
 </html>
 
