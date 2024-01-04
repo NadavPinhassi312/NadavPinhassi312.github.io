@@ -10,7 +10,7 @@
     <div class="main1">
         <div class="header">העצמאים של גדוד 7007</div>
         <div class="para">מים. אדמה. אש. אוויר. סבתא שלי הייתה מספרת לי סיפורים על הימים ההם, ימים של שלום, כשהאווטאר שמר על איזון בין שבטי המים, ממלכת האדמה, אומת האש, ונוודי האוויר. אבל כל זה השתנה כשאומת האש החליטה לתקוף. רק האווטאר השולט בארבעת היסודות, רק הוא יכול היה לעצור את כשפי האש האכזריים. אבל כשהעולם היה זקוק לו יותר מאי פעם, הוא נעלם. מאה שנים חלפו, ואומת האש קרובה לניצחון במלחמה. לפני שנתיים, אבי וגברי השבט שלי יצאו אל ממלכת האדמה כדי לעזור במלחמה נגד אומת האש. אחי ואני נשארנו לדאוג לשבט. יש אנשים שמאמינים שהאווטאר מעולם לא נולד מחדש, ושהמחזוריות נשברה. אבל אני לא איבדתי תקווה. אני עדיין מאמינה שהאווטאר יחזור להציל את העולם.</div>
-        <div class="para">להאמית קרהשק סכעיט דז מא, מנכם למטכין נשואי מנורךגולר מונפרר סוברט לורם שבצק יהול, לכנוץ בעריר גק ליץ, ושבעגט. הועניב היושבב שערש שמחויט - שלושע ותלברו חשלו שעותלשך וחאית נובש ערששף. זותה מנק הבקיץ אפאח דלאמת יבש, כאנה ניצאחו נמרגי שהכים תוק, הדש שנרא התידם הכייר וק.</div>
+
         <div class="searchbar">
             <button class="searchbtn">חפש</button>
             <input type="text" class="searchinput">
@@ -19,14 +19,8 @@
     </div>
     <div class="main2">
         <div class="businesses">
-            <!-- <div class="block">
-                <div class="subtitle">שם העסק: גדכהגכ</div>
-                <div class="subtitle">הבעלים: גדכהגכ</div>
-                <div class="subtitle">תיאור העסק: גדכהגכ</div>
-                <div class="subtitle">מספר טלפון: גדכהגכ</div>
-                <div class="subtitle">אימייל: גדכהגכ</div>
-            </div> -->
-            
+            <!-- <img src="pictures/IMG_1328.JPG" alt="businessIMG" class="image">
+            <img src="" alt=""> -->
         </div>
     </div>
 
@@ -42,7 +36,7 @@
             }
         }
         var businessArray=[]
-        var Catering=new business("קייטרינג","חן אמיר", "אתם מביאים אווירה, אנחנו מביאים אוכל", "0501234567", "henamir@yahoo.org.ch","picture")
+        var Catering=new business("קייטרינג","חן אמיר", "אתם מביאים אווירה, אנחנו מביאים אוכל", "0501234567", "henamir@yahoo.org.ch","pictures/IMG_1328.JPG")
         businessArray.push(Catering)
         var Photography=new business("צילום","גל חפץ", "אני מצלם רק אנשים יפים", "0509876543", "galhefets@pictrures.camera","picture")
         businessArray.push(Photography)
@@ -59,7 +53,7 @@
         var businesses=document.querySelector(".businesses");
         for (i=0;i<businessArray.length;i++){
             var curBuis=businessArray[i]
-            businesses.innerHTML+="<div class='block'><div class='subtitle'>שם העסק: "+curBuis.name+"</div><div class='subtitle'> הבעלים: "+curBuis.owner+"</div><div class='subtitle'>תיאור: "+curBuis.description+"</div><div class='subtitle'>"+curBuis.phone+" :מספר טלפון </div><div class='subtitle'>"+curBuis.email+" :אימייל</div></div>"
+            businesses.innerHTML+="<div class='block'><div class='subtitle'>שם העסק: "+curBuis.name+"</div><div class='subtitle'> הבעלים: "+curBuis.owner+"</div><div class='subtitle'>תיאור: "+curBuis.description+"</div><div class='subtitle'>"+curBuis.phone+" :מספר טלפון </div><div class='subtitle'>"+curBuis.email+" :אימייל</div>"
         }
         
         // businesses.innerHTML+="<div class='block'><div class='subtitle'>"+Catering.name+" :שם העסק </div><div class='subtitle'>"+Catering.owner+" :הבעלים </div><div class='subtitle'>"+Catering.description+" : תיאור </div><div class='subtitle'>"+Catering.phone+" :מספר טלפון </div><div class='subtitle'>"+Catering.email+" :אימייל </div></div>"
