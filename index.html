@@ -18,7 +18,7 @@
         </div>
     </div>
     <div class="main2">
-        <div class="jobs">
+        <div class="businesses">
             <div class="block">sbgvsdfbvsdgf</div>
             <div class="block">sbgvsdfbvsdgf</div>
             <div class="block">sbgvsdfbvsdgf</div>
@@ -39,7 +39,18 @@
     </div>
 
     <script>
-        
+        class business{
+            constructor(name,owner,description,phone,email,picture){
+                this.name=name;
+                this.owner=owner;
+                this.description=description;
+                this.phone=phone;
+                this.email=email;
+                this.picture=picture;
+            }
+        }
+        var Catering=new business("Catering","Hen Amir", "WE BRING YOU FOOD!", "0501234567", "henamir@yahoo.org.ch","picture")
+        print(Catering)
     </script>
 </body>
 </html>
