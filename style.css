@@ -65,6 +65,19 @@ body{
     text-wrap: wrap;
     background-color:rgb(215, 227, 255);
 }
+.blockText{
+    padding:15px;
+}
+.footer {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #ccc; 
+    /* padding-top: 10px;
+    padding-right: 15px;
+    padding-left:15px; 
+    margin-top: 10px;  */
+}
+
 .subtitle{
     text-align: right;
 }
