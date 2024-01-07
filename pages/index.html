@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../mainstyle.css">
     <title>Gdood 7007!</title>
 </head>
 <body>
@@ -25,43 +25,7 @@
     </div>
 
     <script>
-        class business{
-            constructor(name,owner,description,phone,email,picture,address,logo){
-                this.name=name;
-                this.owner=owner;
-                this.description=description;
-                this.phone=phone;
-                this.email=email;
-                this.picture=picture;
-                this.address=address;
-                this.logo=logo
-            }
-        }
-        var businessArray=[]
-        var manor=new business("צימר הבוטיק חלון לגלבוע","מנור זלצר", "החופשה המושלמת בשבילכם, צימר בוטיק פרטי ושווה, ג'קוזי זוגי גדול, מטבח מאובזר לחלוטין, שתי פינות מנגל, מרפסת ענקית + חצר, סביבה ירוקה, פסטורלית ושקטה מלאה בצמחיה טבעית, נוף עוצר נשימה מול הרי הגלבוע, מסלולי טיול, ציפורים וטבע, ועוד ים פינוקים לאנשים שמחפשים חוויה בלתי נשכחת.", "0524209406", "manor.z84@gmail.com","../pictures/manor.jpeg", "קיבוץ בית אלפא", )
-        businessArray.push(manor)
         
-        
-        var businesses = document.querySelector(".businesses");
-        for (i = 0; i < businessArray.length; i++) {
-        var curBuis = businessArray[i];
-        var blockHTML =
-            "<div class='block'>" +
-            "<img src='" + curBuis.picture + "' alt='businessIMG' class='image'>" +
-            "<div class='blockText'>" +
-                "<div class='subtitle busName'>" + curBuis.name + "</div>" +
-                "<div class='subtitle owner'> העסק של " + curBuis.owner + "</div><br>" +
-                "<div class='subtitle'>" + curBuis.description + "&#x200F;" + "</div>" +
-            "</div>" +
-            "<div class='footer blockText'>" +
-                "<div class='subtitle'>" + curBuis.phone + "</div>" +
-                "<div class='subtitle'>" + curBuis.email + "</div>" +
-                "<div class='subtitle'>" + curBuis.address + "</div>" +
-            "</div>" +
-            "</div>";
-
-        businesses.innerHTML += blockHTML;
-    }
     </script>
     
 </body>
