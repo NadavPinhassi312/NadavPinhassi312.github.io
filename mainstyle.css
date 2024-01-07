@@ -15,6 +15,7 @@ body{
     text-align: center;
     background-color:rgb(215, 227, 255);
 }
+
 .main2{
     width:76%;
     margin:0 auto;
@@ -22,7 +23,6 @@ body{
     text-align: center;
     
 }
-
 .header{
     font-size:50px;
     text-decoration: underline;
@@ -32,6 +32,52 @@ body{
     text-align: right;
     margin-top:15px;
 }
+.categories{
+    display:flex;
+    /* border:1px solid blue; */
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    color:red
+}
+.cateBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 1px solid black;
+    color: black;
+    box-shadow: none;
+    
+
+}
+
+a .cateBlock {
+    text-decoration: none !important;
+}
+
+.cateBlock:hover{
+    background-color: rgb(215, 227, 255);
+    transform: scale(1.2);
+    transition: all 200ms ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 .searchbar{
     text-align: right;
@@ -50,6 +96,11 @@ body{
     height:100%;
     font-size: large;
 }
+
+
+
+
+
 .businesses{
     display:flex;
     flex-direction: row;
@@ -72,17 +123,12 @@ body{
     display: flex;
     justify-content: space-between;
     border-top: 1px solid #ccc; 
-    /* padding-top: 10px;
-    padding-right: 15px;
-    padding-left:15px; 
-    margin-top: 10px;  */
 }
 
 .subtitle{
     text-align: right;
 }
 .busName{
-    /* text-decoration: underline; */
     font-weight: bold;
     font-size:30px;
 }
@@ -94,8 +140,8 @@ body{
     width:100%;
     border-radius: 10px;
     float:left;
-    margin-right: 10px; /* Optional margin for spacing */
-    margin-bottom: 10px; /* Optional margin for spacing */
+    margin-right: 10px; 
+    margin-bottom: 10px; 
     clear: both;
 }
 @media(max-width:986px) {
