@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../mainstyle.css">
+    <title>Vacations</title>
+</head>
+<body>
+    <div class="main1">
+        <div class="header">העסקים של גדוד 7007</div>
+        <div class="para">מים. אדמה. אש. אוויר. סבתא שלי הייתה מספרת לי סיפורים על הימים ההם, ימים של שלום, כשהאווטאר שמר על איזון בין שבטי המים, ממלכת האדמה, אומת האש, ונוודי האוויר. אבל כל זה השתנה כשאומת האש החליטה לתקוף. רק האווטאר השולט בארבעת היסודות, רק הוא יכול היה לעצור את כשפי האש האכזריים. אבל כשהעולם היה זקוק לו יותר מאי פעם, הוא נעלם. מאה שנים חלפו, ואומת האש קרובה לניצחון במלחמה. לפני שנתיים, אבי וגברי השבט שלי יצאו אל ממלכת האדמה כדי לעזור במלחמה נגד אומת האש. אחי ואני נשארנו לדאוג לשבט. יש אנשים שמאמינים שהאווטאר מעולם לא נולד מחדש, ושהמחזוריות נשברה. אבל אני לא איבדתי תקווה. אני עדיין מאמינה שהאווטאר יחזור להציל את העולם.</div>
+
+        <div class="searchbar">
+            <button class="searchbtn">חפש</button>
+            <input type="text" class="searchinput">
+            <span class="searchtext">:לחיפוש מקצוע הקלידו כאן</span>
+        </div>
+    </div>
+    <div class="main2">
+        <div class="businesses">
+            <!-- <img src="pictures/IMG_1328.JPG" alt="businessIMG" class="image">
+            <img src="" alt=""> -->
+        </div>
+    </div>
+
+    <script>
+        class business{
+            constructor(name,owner,description,phone,email,picture,address,logo){
+                this.name=name;
+                this.owner=owner;
+                this.description=description;
+                this.phone=phone;
+                this.email=email;
+                this.picture=picture;
+                this.address=address;
+                this.logo=logo
+            }
+        }
+        var businessArray=[]
+        // var  =new business("name","owner","description", "number","email","../pictures/picture","address")
+        // businessArray.push()
+        var manor=new business("צימר הבוטיק חלון לגלבוע","מנור זלצר", "החופשה המושלמת בשבילכם, צימר בוטיק פרטי ושווה, ג'קוזי זוגי גדול, מטבח מאובזר לחלוטין, שתי פינות מנגל, מרפסת ענקית + חצר, סביבה ירוקה, פסטורלית ושקטה מלאה בצמחיה טבעית, נוף עוצר נשימה מול הרי הגלבוע, מסלולי טיול, ציפורים וטבע, ועוד ים פינוקים לאנשים שמחפשים חוויה בלתי נשכחת.", "0524209406", "manor.z84@gmail.com","../pictures/manor.jpeg", "קיבוץ בית אלפא", )
+        businessArray.push(manor)
+        var roypesah =new business("דיג'יי","רועי פסח","רועי פסח תקליטן עם המון תשוקה, נסיון אדיר ואופי יחודי מגיע להקפיץ לכם את הרחבה. מוזיקה שלא חלמתם לשמוע יחד עם שילוב המתאים לסגנון שלכם, מתאים לכל סוגי האירועים עם מלא אנרגיות אהבה. מזל טוב!", "0548183936","djroyepesah@gmail.com","../pictures/roypesah.png","דרור 22, באר שבע")
+        businessArray.push(roypesah)
+        var seo=new business("סאו תכשיטים - SEO JEWELRY","נאור סדרינה","שמי נאור סדרינה, נשוי לירדן ואבא של ליאן, עמית ועדן אני מפ מסייעת בגדוד 7007 מזה כ4 שנים את העסק הקמתי לפני כ5 שנים בבורסה ברמת גן אנו מציעים מציע תכשיטי זהב ויהלומים בעיצובים אישיים בהתאמה לכול תקציב ולקוח. תכשיטים כגון: טבעות אירוסין, שרשראות, צמידים, עגילים תכשיטים לאישה, לגבר וגם לנערים, ילדים ותינוקות", "050-3972925","support@seojewelry.co.il","","תובל 23 רמת גן")
+        businessArray.push(seo)
+
+        
+        var businesses = document.querySelector(".businesses");
+        for (i = 0; i < businessArray.length; i++) {
+        var curBuis = businessArray[i];
+        var blockHTML =
+            "<div class='block'>" +
+            "<img src='" + curBuis.picture + "' alt='businessIMG' class='image'>" +
+            "<div class='blockText'>" +
+                "<div class='subtitle busName'>" + curBuis.name + "</div>" +
+                "<div class='subtitle owner'> העסק של " + curBuis.owner + "</div><br>" +
+                "<div class='subtitle'>" + curBuis.description + "&#x200F;" + "</div>" +
+            "</div>" +
+            "<div class='footer blockText'>" +
+                "<div class='subtitle'>" + curBuis.phone + "</div>" +
+                "<div class='subtitle'>" + curBuis.email + "</div>" +
+                "<div class='subtitle'>" + curBuis.address + "</div>" +
+            "</div>" +
+            "</div>";
+
+        businesses.innerHTML += blockHTML;
+    }
+    </script>
+    
+</body>
+</html>
