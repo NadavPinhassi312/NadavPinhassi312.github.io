@@ -68,9 +68,17 @@ body{
 .subtitle{
     text-align: right;
 }
+.busName{
+    /* text-decoration: underline; */
+    font-weight: bold;
+    font-size:30px;
+}
+.owner{
+    font-size:25px;
+}
 .image{
-    height:300px;
-    width:auto;
+    /* height:300px; */
+    width:100%;
     border-radius: 10px;
     float:left;
     margin-right: 10px; /* Optional margin for spacing */

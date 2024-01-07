@@ -26,28 +26,26 @@
 
     <script>
         class business{
-            constructor(name,owner,description,phone,email,picture){
+            constructor(name,owner,description,phone,email,picture,imageWidth){
                 this.name=name;
                 this.owner=owner;
                 this.description=description;
                 this.phone=phone;
                 this.email=email;
                 this.picture=picture;
+                this.imageWidth=imageWidth;
             }
         }
         var businessArray=[]
-        var Catering=new business("קייטרינג","חן אמיר", "אתם מביאים אווירה, אנחנו מביאים אוכל", "0501234567", "henamir@yahoo.org.ch","pictures/IMG_1328.JPG")
+        var Catering=new business("צימר הבוטיק חלון לגלבוע","מנור זלצר", "החופשה המושלמת בשבילכם, צימר בוטיק פרטי ושווה, ג'קוזי זוגי גדול, מטבח מאובזר לחלוטין, שתי פינות מנגל, מרפסת ענקית + חצר, סביבה ירוקה, פסטורלית ושקטה מלאה בצמחיה טבעית, נוף עוצר נשימה מול הרי הגלבוע, מסלולי טיול, ציפורים וטבע, ועוד ים פינוקים לאנשים שמחפשים חוויה בלתי נשכחת", "0524209406", "manor.z84@gmail.com","pictures/manor.jpeg", "wide")
         businessArray.push(Catering)
-        var Photography=new business("צילום","גל חפץ", "אני מצלם רק אנשים יפים", "0509876543", "galhefets@pictrures.camera","pictures/IMG_1328.JPG")
-        businessArray.push(Photography)
-        var Photography=new business("צילום","גל חפץ", "אני מצלם רק אנשים יפים", "0509876543", "galhefets@pictrures.camera","pictures/IMG_1328.JPG")
-        businessArray.push(Photography)
-        var Photography=new business("צילום","גל חפץ", "אני מצלם רק אנשים יפים", "0509876543", "galhefets@pictrures.camera","pictures/IMG_1328.JPG")
-        businessArray.push(Photography)
-        var Photography=new business("צילום","גל חפץ", "אני מצלם רק אנשים יפים", "0509876543", "galhefets@pictrures.camera","pictures/IMG_1328.JPG")
-        businessArray.push(Photography)
-        var Photography=new business("צילום","גל חפץ", "אני מצלם רק אנשים יפים", "0509876543", "galhefets@pictrures.camera","pictures/IMG_1328.JPG")
-        businessArray.push(Photography)
+        var Catering=new business("צימר הבוטיק חלון לגלבוע","מנור זלצר", "החופשה המושלמת בשבילכם, צימר בוטיק פרטי ושווה, ג'קוזי זוגי גדול, מטבח מאובזר לחלוטין, שתי פינות מנגל, מרפסת ענקית + חצר, סביבה ירוקה, פסטורלית ושקטה מלאה בצמחיה טבעית, נוף עוצר נשימה מול הרי הגלבוע, מסלולי טיול, ציפורים וטבע, ועוד ים פינוקים לאנשים שמחפשים חוויה בלתי נשכחת", "0524209406", "manor.z84@gmail.com","pictures/manor.jpeg", "wide")
+        businessArray.push(Catering)
+        var Catering=new business("צימר הבוטיק חלון לגלבוע","מנור זלצר", "החופשה המושלמת בשבילכם, צימר בוטיק פרטי ושווה, ג'קוזי זוגי גדול, מטבח מאובזר לחלוטין, שתי פינות מנגל, מרפסת ענקית + חצר, סביבה ירוקה, פסטורלית ושקטה מלאה בצמחיה טבעית, נוף עוצר נשימה מול הרי הגלבוע, מסלולי טיול, ציפורים וטבע, ועוד ים פינוקים לאנשים שמחפשים חוויה בלתי נשכחת", "0524209406", "manor.z84@gmail.com","pictures/manor.jpeg", "wide")
+        businessArray.push(Catering)
+        var Catering=new business("צימר הבוטיק חלון לגלבוע","מנור זלצר", "החופשה המושלמת בשבילכם, צימר בוטיק פרטי ושווה, ג'קוזי זוגי גדול, מטבח מאובזר לחלוטין, שתי פינות מנגל, מרפסת ענקית + חצר, סביבה ירוקה, פסטורלית ושקטה מלאה בצמחיה טבעית, נוף עוצר נשימה מול הרי הגלבוע, מסלולי טיול, ציפורים וטבע, ועוד ים פינוקים לאנשים שמחפשים חוויה בלתי נשכחת", "0524209406", "manor.z84@gmail.com","pictures/manor.jpeg", "wide")
+        businessArray.push(Catering)
+        
         
 
         var businesses=document.querySelector(".businesses");
@@ -56,10 +54,10 @@
             var blockHTML =
             "<div class='block'>" +
                 "<img src='" + curBuis.picture + "' alt='businessIMG' class='image'>" +
-                "<div class='subtitle'>שם העסק: " + curBuis.name + "</div>" +
-                "<div class='subtitle'> הבעלים: " + curBuis.owner + "</div>" +
-                "<div class='subtitle'>תיאור: " + curBuis.description + "</div>" +
-                "<div class='subtitle'>" + curBuis.phone + " :מספר טלפון </div>" +
+                "<div class='subtitle busName'>" + curBuis.name + "</div>" +
+                "<div class='subtitle owner'> העסק של " + curBuis.owner + "</div><br>" +
+                "<div class='subtitle'>" + curBuis.description + "</div>" +
+                "<div class='subtitle'><br>" + curBuis.phone + " :מספר טלפון </div>" +
                 "<div class='subtitle'>" + curBuis.email + " :אימייל</div>" +
                 "</div>";
 
@@ -73,3 +71,13 @@
 </body>
 </html>
 
+<!-- var Photography=new business("צילום","גל חפץ", "אני מצלם רק אנשים יפים", "0509876543", "galhefets@pictrures.camera","pictures/IMG_1328.JPG")
+        businessArray.push(Photography)
+        var Photography=new business("צילום","גל חפץ", "אני מצלם רק אנשים יפים", "0509876543", "galhefets@pictrures.camera","pictures/IMG_1328.JPG")
+        businessArray.push(Photography)
+        var Photography=new business("צילום","גל חפץ", "אני מצלם רק אנשים יפים", "0509876543", "galhefets@pictrures.camera","pictures/IMG_1328.JPG")
+        businessArray.push(Photography)
+        var Photography=new business("צילום","גל חפץ", "אני מצלם רק אנשים יפים", "0509876543", "galhefets@pictrures.camera","pictures/IMG_1328.JPG")
+        businessArray.push(Photography)
+        var Photography=new business("צילום","גל חפץ", "אני מצלם רק אנשים יפים", "0509876543", "galhefets@pictrures.camera","pictures/IMG_1328.JPG")
+        businessArray.push(Photography) -->
