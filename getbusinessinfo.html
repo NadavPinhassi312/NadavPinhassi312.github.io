@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Get User Input</title>
+  <style>
+    textarea {
+      width: 100%;
+      resize: vertical;
+    }
+    input, textarea, label {
+        margin: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<form id="inputForm">
+  <label for="varName">Variable Name:</label>
+  <input type="text" id="varName" required><br>
+
+  <label for="name">Name:</label>
+  <input type="text" id="name" required><br>
+
+  <label for="owner">Owner:</label>
+  <input type="text" id="owner" required><br>
+
+  <label for="description">Description:</label>
+  <textarea id="description" required></textarea><br>
+
+  <label for="phone">Phone:</label>
+  <input type="text" id="phone" required><br>
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" required><br>
+
+  <!-- <label for="picture">Picture:</label>
+  <input type="text" id="picture" required><br> -->
+
+  <button type="button" onclick="main()">Submit</button>
+</form>
+
+<script>
+  function main() {
+    const varNameInput = document.getElementById('varName');
+    const nameInput = document.getElementById('name');
+    const ownerInput = document.getElementById('owner');
+    const descriptionInput = document.getElementById('description');
+    const phoneInput = document.getElementById('phone');
+    const emailInput = document.getElementById('email');
+
+    const varName = varNameInput.value;
+    const name = nameInput.value;
+    const owner = ownerInput.value;
+    const description = descriptionInput.value;
+    const phone = phoneInput.value;
+    const email = emailInput.value;
+    const picture = "";
+
+    // Print the lines
+    console.log(`var ${varName} = new Business("${name}", "${owner}", "${description}", "${phone}", "${email}", "${picture}");`);
+    console.log(`businessArray.push(${varName});`);
+
+    // Clear the input fields
+    varNameInput.value = '';
+    nameInput.value = '';
+    ownerInput.value = '';
+    descriptionInput.value = '';
+    phoneInput.value = '';
+    emailInput.value = '';
+    // pictureInput.value = '';
+  }
+</script>
+
+</body>
+</html>
