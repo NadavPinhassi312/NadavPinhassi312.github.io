@@ -9,7 +9,7 @@
       width: 100%;
       resize: vertical;
     }
-    input, textarea, label {
+    textarea, label {
         margin: 10px;
     }
   </style>
@@ -18,25 +18,25 @@
 
 <form id="inputForm">
   <label for="varName">Variable Name:</label>
-  <input type="text" id="varName" required><br>
+  <textarea id="varName" required></textarea><br>
 
   <label for="name">Name:</label>
-  <input type="text" id="name" required><br>
+  <textarea id="name" required></textarea><br>
 
   <label for="owner">Owner:</label>
-  <input type="text" id="owner" required><br>
+  <textarea id="owner" required></textarea><br>
 
   <label for="description">Description:</label>
   <textarea id="description" required></textarea><br>
 
   <label for="phone">Phone:</label>
-  <input type="text" id="phone" required><br>
+  <textarea id="phone" required></textarea><br>
 
   <label for="email">Email:</label>
-  <input type="email" id="email" required><br>
+  <textarea id="email" required></textarea><br>
 
   <!-- <label for="picture">Picture:</label>
-  <input type="text" id="picture" required><br> -->
+  <textarea id="picture" required></textarea><br> -->
 
   <button type="button" onclick="main()">Submit</button>
 </form>
