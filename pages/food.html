@@ -20,8 +20,8 @@
     </div>
 
     <script>
-        var vacationsArray = JSON.parse(localStorage.getItem('vacationsArray')) || [];
-        console.log(vacationsArray)
+        var foodArray = JSON.parse(localStorage.getItem('foodArray')) || [];
+        console.log(foodArray)
         class Business{
             constructor(name,owner,description,phone,email,picture,address,logo){
                 this.name=name;
@@ -36,8 +36,8 @@
         }
         
         var businesses = document.querySelector(".businesses");
-        for (i = 0; i < vacationsArray.length; i++) {
-        var curBuis = vacationsArray[i];
+        for (i = 0; i < foodArray.length; i++) {
+        var curBuis = foodArray[i];
         var blockHTML =
             "<div class='block'>" +
             "<img src='" + curBuis.picture + "' alt='businessIMG' class='image'>" +

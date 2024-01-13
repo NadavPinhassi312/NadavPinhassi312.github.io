@@ -35,29 +35,29 @@ body{
 .categories{
     display:flex;
     /* border:1px solid blue; */
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
-
-    color:red
+    flex-direction: column;
+    
 }
 .cateBlock {
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    width: 200px;
+    width: 50%;
     height: 200px;
-    margin: 10px;
+    margin: 10px auto;
     margin-top: 20px;
     border-radius: 10px;
-    border: 1px solid black;
+    border:1px solid black;
     color: black;
-    box-shadow: none;
-    
+    text-decoration: none;
+    font-size:40px;
 
 }
 
-a .cateBlock {
+.cateBlock a {
     text-decoration: none !important;
 }
 
@@ -66,17 +66,6 @@ a .cateBlock {
     transform: scale(1.2);
     transition: all 200ms ease-in-out;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 .searchbar{
